@@ -74,6 +74,7 @@
 | S330 | @opspawn | JUDGMENT_DETECTORS stale-import excludes plugins | DUPLICATE | 3 | 0 | 0 | 1 | Duplicate of S20 (@dayi1000): same stale frozenset binding via `from registry import JUDGMENT_DETECTORS` in concerns.py; correct Python semantics but zero current impact — no plugin registers needs_judgment=True; S20 already verified this |
 | S331 | @openclawmara | ScoreBundle aggregates silently discarded by _aggregate_scores | VERIFIED | 5 | 5 | 3 | 4 | Both claims confirmed: ScoreBundle computes 4 aggregate scores never read in production (only in tests); _aggregate_scores recomputes independently with semantic disagreement on verified_strict_score (excludes subjective dims, Pipeline 1 includes them); line refs mostly accurate (core.py off by ~20 lines); dead code + wasted computation, no live scoring impact |
 | S332 | @Tib-Gridello | Heterogeneous tuple sort keys in _natural_sort_key | VERIFIED | 7 | 8 | 6 | 7 | All 4 claims confirmed: subjective items return 4-element tuples, mechanical return 6-element at same _RANK_ISSUE tier; TypeError crash when impact ties and subjective_score matches CONFIDENCE_ORDER value; cross-compares score(0-100) vs confidence(0-9) causing wrong ordering; all file paths and line numbers exact |
+| S333 | @TSECP | Unsandboxed plugin auto-loading (dup) | DUPLICATE | 3 | 0 | 0 | 1 | Duplicate of S328 (@optimus-fulcria): same discovery.py:95-113 exec_module plugin loading; no new findings |
 
 ## Scoring Guide
 - **Sig** (1-10): Significance — how meaningful as "poorly engineered"?
