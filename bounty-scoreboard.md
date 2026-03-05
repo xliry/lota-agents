@@ -54,6 +54,7 @@
 | S310 | @doncarbon | Callback-parameter explosion pattern | PARTIALLY VERIFIED | 5 | 3 | 1 | 3 | Real systemic pattern (15 callbacks in do_run_batches, 539 _fn refs across 84 files); line numbers wrong (280 vs 391); param counts off by 1; overlaps S17+S22 |
 | S311 | @samquill | Duplicate diverged CONFIDENCE_WEIGHTS | PARTIALLY VERIFIED | 4 | 4 | 2 | 3 | Real: batch scoring defines _CONFIDENCE_WEIGHTS {high:1.2,med:1.0,low:0.75} vs canonical {1.0,0.7,0.3}; but they serve different scoring contexts (detection vs holistic dimension merge); divergence may be intentional |
 | S312 | @jujujuda | Silent fallback masks runtime failures | PARTIALLY VERIFIED | 3 | 2 | 1 | 2 | Config silent {} return is real but standard; load_state claim false (returns empty_state with logging, not None); weight fallback is documented cycle-break pattern |
+| S313 | @juzigu40-ui | S02 supplemental: scoring-policy impact | VERIFIED | 5 | 5 | 2 | 4 | Valid supplemental tracing non-transactional migration to target_strict_score drift; all code refs accurate; but failure scenario (OSError on config write after state strip) is too narrow for major impact |
 
 ## Scoring Guide
 - **Sig** (1-10): Significance — how meaningful as "poorly engineered"?
