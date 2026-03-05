@@ -20,7 +20,7 @@
 | S10 | @dayi1000 | Frozen dataclass with mutable list | VERIFIED | 3 | 4 | 1 | 3 | Valid but inert: no code mutates the list; zero scoring impact |
 | S11 | @yuzebin | Engine->app layer violation | PARTIALLY VERIFIED | 6 | 5 | 3 | 5 | Real violation in since-removed file; inaccurate line numbers |
 | S12 | @renhe3983 | Duplicated phase configuration | NOT VERIFIED | 1 | 1 | 1 | 1 | Fabricated: LanguagePhases class doesn't exist, line counts invented (4300 claimed vs 1479 actual), shared framework already exists |
-| S13 | @renhe3983 | Test files larger than implementation | - | - | - | - | - | |
+| S13 | @renhe3983 | Test files larger than implementation | NOT VERIFIED | 2 | 2 | 1 | 2 | All 3 file paths wrong; "5-10x" ratio claim false (actual 0.73x); healthy test ratios |
 | S14 | @renhe3983 | Debug print statements in production | - | - | - | - | - | |
 | S15 | @anthony-spruyt | Penalizes SOLID principles | PARTIALLY VERIFIED | 6 | 5 | 5 | 5 | Real issue: abstraction_fitness scores 71.3 on DI-heavy codebase; skip-clauses not applied by LLM reviewers |
 | S16 | @opspawn | Scoring policy registry mutation | PARTIALLY VERIFIED | 3 | 3 | 2 | 3 | Standard Python plugin pattern; theoretical threading concern in CLI tool |
