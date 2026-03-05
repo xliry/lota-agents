@@ -17,7 +17,7 @@
 | S07 | @renhe3983 | Follow-up observations | - | - | - | - | - | |
 | S08 | @taco-devs | Issue.detail stringly-typed god field | PARTIALLY VERIFIED | 5 | 3 | 2 | 3 | Valid core observation; 2/3 code examples fabricated, metrics inflated 2x |
 | S09 | @renhe3983 | Issue.detail god field | - | - | - | - | - | Duplicate of S08 |
-| S10 | @dayi1000 | Frozen dataclass with mutable list | - | - | - | - | - | |
+| S10 | @dayi1000 | Frozen dataclass with mutable list | VERIFIED | 3 | 4 | 1 | 3 | Valid but inert: no code mutates the list; zero scoring impact |
 | S11 | @yuzebin | Engine->intelligence layer violation | - | - | - | - | - | |
 | S12 | @renhe3983 | Duplicated phase configuration | - | - | - | - | - | |
 | S13 | @renhe3983 | Test files larger than implementation | - | - | - | - | - | |
