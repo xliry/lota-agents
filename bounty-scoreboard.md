@@ -39,6 +39,7 @@
 | S29 | @renhe3983 | Duplicate config validation patterns | - | - | - | - | - | |
 | S30 | @renhe3983 | Flat directory structure 605 files | - | - | - | - | - | |
 | S31 | @xinlingfeiwu | Work queue uses lenient headroom | NOT VERIFIED | 2 | 2 | 1 | 2 | Central claim (enrich_with_impact, headroom prioritization) fabricated; ranking uses tier/confidence, not health breakdown |
+| S33 | @renhe3983 | No centralized config management | NOT VERIFIED | 2 | 1 | 1 | 1 | Claim factually wrong: core/config.py has schema-driven centralized config with validation; cited path base/config.py does not exist |
 
 ## Scoring Guide
 - **Sig** (1-10): Significance — how meaningful as "poorly engineered"?
