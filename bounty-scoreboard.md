@@ -64,6 +64,7 @@
 | S320 | @vu1n | --runner CLI only accepts codex | PARTIALLY VERIFIED | 3 | 3 | 1 | 2 | All code refs accurate; --runner choices=["codex"] and validate_runner reject non-codex; but --dry-run + --import-run provides complete non-codex workaround; prepare.py documents multi-runner paths; intentional phased rollout, not a bug |
 | S321 | @jujujuda | Placeholder — no finding | INVALID | 0 | 0 | 0 | 0 | No technical content; just a boilerplate "Initial Assessment" promising future analysis that never came |
 | S322 | @ShawTim | _FLOOR_BLEND_WEIGHT enables gaming via historical data | NOT VERIFIED | 2 | 2 | 1 | 2 | Mischaracterizes floor blend: floor = min(current batch scores), not historical data; the 30% blend is anti-gaming by design (pulls toward worst batch) |
+| S323 | @campersurfer | content_hash in issue IDs causes churn on re-import | VERIFIED | 5 | 5 | 3 | 4 | All 4 claims confirmed: sha256(summary)[:8] baked into IDs at per_file.py:113+121 and holistic_issue_flow.py:107+126; auto_resolve resolves by ID mismatch; no fuzzy dedup; batch_core _finding_identity_key deliberately omits content hash, confirming design inconsistency |
 
 ## Scoring Guide
 - **Sig** (1-10): Significance — how meaningful as "poorly engineered"?
