@@ -65,6 +65,7 @@
 | S321 | @jujujuda | Placeholder — no finding | INVALID | 0 | 0 | 0 | 0 | No technical content; just a boilerplate "Initial Assessment" promising future analysis that never came |
 | S322 | @ShawTim | _FLOOR_BLEND_WEIGHT enables gaming via historical data | NOT VERIFIED | 2 | 2 | 1 | 2 | Mischaracterizes floor blend: floor = min(current batch scores), not historical data; the 30% blend is anti-gaming by design (pulls toward worst batch) |
 | S323 | @campersurfer | content_hash in issue IDs causes churn on re-import | VERIFIED | 5 | 5 | 3 | 4 | All 4 claims confirmed: sha256(summary)[:8] baked into IDs at per_file.py:113+121 and holistic_issue_flow.py:107+126; auto_resolve resolves by ID mismatch; no fuzzy dedup; batch_core _finding_identity_key deliberately omits content hash, confirming design inconsistency |
+| S324 | @SolariSystems | Dual-authority dimension weight dead fallback | PARTIALLY VERIFIED | 3 | 5 | 2 | 3 | Code flow accurate: _dimension_weight returns 1.0 on failure, written as configured_weight, bypasses SUBJECTIVE_DIMENSION_WEIGHTS; but metadata.py failure is near-impossible (deferred import resolves fine at runtime), SUBJECTIVE_DIMENSION_WEIGHTS serves stored-data fallback not metadata.py recovery, and metadata.py has own legacy fallbacks |
 
 ## Scoring Guide
 - **Sig** (1-10): Significance — how meaningful as "poorly engineered"?
