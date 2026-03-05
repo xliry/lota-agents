@@ -68,6 +68,7 @@
 | S324 | @SolariSystems | Dual-authority dimension weight dead fallback | PARTIALLY VERIFIED | 3 | 5 | 2 | 3 | Code flow accurate: _dimension_weight returns 1.0 on failure, written as configured_weight, bypasses SUBJECTIVE_DIMENSION_WEIGHTS; but metadata.py failure is near-impossible (deferred import resolves fine at runtime), SUBJECTIVE_DIMENSION_WEIGHTS serves stored-data fallback not metadata.py recovery, and metadata.py has own legacy fallbacks |
 | S325 | @gent33112-wq | Expression of interest (no submission) | INVALID | 0 | 0 | 0 | 0 | Not a submission — no technical claims, just interest in participating |
 | S326 | @kmccleary3301 | do_import_run() omits review_scope/reviewed_files/assessment_coverage | VERIFIED | 6 | 6 | 4 | 5 | All claims confirmed: do_import_run skips 3 metadata fields that _merge_and_write_results sets; missing full_sweep_included=None causes unscoped auto-resolution of ALL holistic issues on partial replay |
+| S327 | @shanpenghui | Duplicate action-priority tables with contradictory ordering | VERIFIED | 4 | 4 | 1 | 3 | Confirmed: helpers.py ACTION_TYPE_PRIORITY has refactor=1,reorganize=3 vs registry _ACTION_PRIORITY has reorganize=1,refactor=2; additionally core/registry.py is a stale diverged copy of base/registry.py (missing tier/standalone_threshold/marks_dims_stale fields, different _ACTION_LABELS); affects UI sort order only, no scoring impact |
 
 ## Scoring Guide
 - **Sig** (1-10): Significance — how meaningful as "poorly engineered"?
