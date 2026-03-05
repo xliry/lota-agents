@@ -32,7 +32,7 @@
 | S22 | @samquill | do_run_batches 15 raw callbacks | PARTIALLY VERIFIED | 4 | 3 | 1 | 3 | Real 15-callback observation; every file path, line number, parameter name, and types file wrong |
 | S23 | @xinlingfeiwu | Systematic over-injection anti-pattern | INVALID | 1 | 1 | 1 | 1 | All three claimed layers fabricated; no referenced files, functions, or signatures exist |
 | S24 | @Midwest-AI-Solutions | str.replace corrupts cluster meta | - | - | - | - | - | |
-| S25 | @xliry | false_positive scan-proof score inflation | - | - | - | - | - | OUR SUBMISSION |
+| S25 | @xliry | false_positive scan-proof score inflation | VERIFIED | 8 | 8 | 9 | 8 | All 3 claims verified, all file refs accurate |
 | S26 | @xinlingfeiwu | app/ layer bypasses engine facades | - | - | - | - | - | |
 | S27 | @renhe3983 | Inconsistent exception handling | - | - | - | - | - | |
 | S28 | @Midwest-AI-Solutions | dimension_coverage tautological metric | - | - | - | - | - | |
