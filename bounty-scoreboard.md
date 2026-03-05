@@ -8,7 +8,7 @@
 
 | ID | Author | Title | Status | Sig | Orig | Core | Overall | Notes |
 |----|--------|-------|--------|-----|------|------|---------|-------|
-| S01 | @yuliuyi717-ux | State-model coupling | - | - | - | - | - | |
+| S01 | @yuliuyi717-ux | State-model coupling | PARTIALLY VERIFIED | 4 | 3 | 3 | 3 | Accurate refs but shallow; scores recomputed deterministically |
 | S02 | @juzigu40-ui | Config bootstrap non-transactional | - | - | - | - | - | |
 | S03 | @agustif | Subjective dimension circular pipeline | - | - | - | - | - | |
 | S04 | @agustif | Plan persistence destructive migration | - | - | - | - | - | |
