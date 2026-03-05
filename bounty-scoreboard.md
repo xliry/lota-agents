@@ -25,7 +25,7 @@
 | S15 | @anthony-spruyt | Penalizes SOLID principles | PARTIALLY VERIFIED | 6 | 5 | 5 | 5 | Real issue: abstraction_fitness scores 71.3 on DI-heavy codebase; skip-clauses not applied by LLM reviewers |
 | S16 | @opspawn | Scoring policy registry mutation | PARTIALLY VERIFIED | 3 | 3 | 2 | 3 | Standard Python plugin pattern; theoretical threading concern in CLI tool |
 | S17 | @jasonsutter87 | God-orchestrator do_run_batches | PARTIALLY VERIFIED | 6 | 3 | 2 | 3 | Valid core observation; fabricated file paths (execution.py doesn't exist), invented function (prepare_holistic_review_payload), wrong numeric claims |
-| S18 | @jasonsutter87 | Selective lock discipline | - | - | - | - | - | |
+| S18 | @jasonsutter87 | Selective lock discipline | PARTIALLY VERIFIED | 2 | 3 | 1 | 2 | Spots asymmetric locking but misdiagnoses it; failures is main-thread-only; fabricated contract_cache and non-existent file paths |
 | S19 | @TheSeanLavery | Performance improvements | - | - | - | - | - | |
 | S20 | @dayi1000 | Stale import binding JUDGMENT_DETECTORS | - | - | - | - | - | |
 | S21 | @xinlingfeiwu | compute_score_impact ignores weights | - | - | - | - | - | |
