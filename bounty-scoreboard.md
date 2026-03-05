@@ -35,7 +35,7 @@
 | S25 | @xliry | false_positive scan-proof score inflation | VERIFIED | 8 | 8 | 9 | 8 | All 3 claims verified, all file refs accurate |
 | S26 | @xinlingfeiwu | app/ layer bypasses engine facades | - | - | - | - | - | |
 | S27 | @renhe3983 | Inconsistent exception handling | - | - | - | - | - | |
-| S28 | @Midwest-AI-Solutions | dimension_coverage tautological metric | - | - | - | - | - | |
+| S28 | @Midwest-AI-Solutions | dimension_coverage tautological metric | INVALID | 1 | 2 | 0 | 1 | Code misquoted: denominator is allowed_dims not assessments; metric works correctly |
 | S29 | @renhe3983 | Duplicate config validation patterns | - | - | - | - | - | |
 | S30 | @renhe3983 | Flat directory structure 605 files | - | - | - | - | - | |
 
