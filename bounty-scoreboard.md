@@ -12,7 +12,7 @@
 | S02 | @juzigu40-ui | Config bootstrap non-transactional | VERIFIED | 4 | 5 | 1 | 3 | Valid but inflated; low-risk migration path, no scoring impact |
 | S03 | @agustif | Subjective dimension circular pipeline | PARTIALLY VERIFIED | 5 | 3 | 4 | 3 | Real circular dep but fabricated file paths; half evidence doesn't check out |
 | S04 | @agustif | Plan persistence destructive migration | - | - | - | - | - | |
-| S05 | @agustif | Review packet schema drift | - | - | - | - | - | |
+| S05 | @agustif | Review packet schema drift | PARTIALLY VERIFIED | 6 | 4 | 3 | 4 | Real drift in external.py but fabricated file paths |
 | S06 | @renhe3983 | Fake language support | - | - | - | - | - | Owner: intentional |
 | S07 | @renhe3983 | Follow-up observations | - | - | - | - | - | |
 | S08 | @taco-devs | Issue.detail stringly-typed god field | - | - | - | - | - | |
