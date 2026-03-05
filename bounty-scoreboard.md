@@ -21,7 +21,7 @@
 | S11 | @yuzebin | Engine->app layer violation | PARTIALLY VERIFIED | 6 | 5 | 3 | 5 | Real violation in since-removed file; inaccurate line numbers |
 | S12 | @renhe3983 | Duplicated phase configuration | NOT VERIFIED | 1 | 1 | 1 | 1 | Fabricated: LanguagePhases class doesn't exist, line counts invented (4300 claimed vs 1479 actual), shared framework already exists |
 | S13 | @renhe3983 | Test files larger than implementation | NOT VERIFIED | 2 | 2 | 1 | 2 | All 3 file paths wrong; "5-10x" ratio claim false (actual 0.73x); healthy test ratios |
-| S14 | @renhe3983 | Debug print statements in production | - | - | - | - | - | |
+| S14 | @renhe3983 | Debug print statements in production | PARTIALLY VERIFIED | 3 | 2 | 1 | 2 | 5 claims: print-vs-logger ratio real but numbers inflated; monolithic files mostly fabricated; detector count off 2.4x; test sizes wrong magnitudes; async irrelevant for CLI |
 | S15 | @anthony-spruyt | Penalizes SOLID principles | PARTIALLY VERIFIED | 6 | 5 | 5 | 5 | Real issue: abstraction_fitness scores 71.3 on DI-heavy codebase; skip-clauses not applied by LLM reviewers |
 | S16 | @opspawn | Scoring policy registry mutation | PARTIALLY VERIFIED | 3 | 3 | 2 | 3 | Standard Python plugin pattern; theoretical threading concern in CLI tool |
 | S17 | @jasonsutter87 | God-orchestrator do_run_batches | PARTIALLY VERIFIED | 6 | 3 | 2 | 3 | Valid core observation; fabricated file paths (execution.py doesn't exist), invented function (prepare_holistic_review_payload), wrong numeric claims |
