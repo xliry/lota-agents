@@ -34,7 +34,7 @@
 | S24 | @Midwest-AI-Solutions | str.replace corrupts cluster meta | VERIFIED | 3 | 4 | 3 | 3 | Confirmed: naive str.replace corrupts unrelated numbers in cluster descriptions |
 | S25 | @xliry | false_positive scan-proof score inflation | VERIFIED | 8 | 8 | 9 | 8 | All 3 claims verified, all file refs accurate |
 | S26 | @xinlingfeiwu | app/ layer bypasses engine facades | NOT VERIFIED | 3 | 2 | 1 | 2 | Actual: 5 imports not 57; fabricated file paths, inflated count 11x, claimed missing facades exist |
-| S27 | @renhe3983 | Inconsistent exception handling | - | - | - | - | - | |
+| S27 | @renhe3983 | Inconsistent exception handling | PARTIALLY VERIFIED | 3 | 2 | 1 | 2 | Valid kernel: tool has `except Exception: pass/continue` its own detectors flag; but wrong file paths, no evidence, vague claims, best-effort patterns are intentional |
 | S28 | @Midwest-AI-Solutions | dimension_coverage tautological metric | INVALID | 1 | 2 | 0 | 1 | Code misquoted: denominator is allowed_dims not assessments; metric works correctly |
 | S29 | @renhe3983 | Duplicate config validation patterns | - | - | - | - | - | |
 | S30 | @renhe3983 | Flat directory structure 605 files | - | - | - | - | - | |
