@@ -45,6 +45,7 @@
 | S35 | @renhe3983 | Missing test coverage documentation | PARTIALLY VERIFIED | 1 | 1 | 0 | 1 | Technically true: no coverage badge or CI coverage reports; but trivially observable documentation gap, not an engineering deficiency |
 | S36 | @mpoffizial | Extreme nesting depth in test file | NOT VERIFIED | 1 | 1 | 0 | 1 | 9-level nesting exists but is 100% JSON data literals in test fixtures, not logic; 3-sentence submission with no evidence |
 | S37 | @Boripheus | Unsynchronized failures set | NOT VERIFIED | 2 | 2 | 1 | 2 | `failures` set only mutated from main thread; locking asymmetry with `progress_failures` is correct design; overlaps S18 |
+| S304 | @Boripheus | Unsynchronized failures set (dup) | DUPLICATE | 2 | 0 | 1 | 1 | Exact duplicate of S37 by same author; no new information |
 
 ## Scoring Guide
 - **Sig** (1-10): Significance — how meaningful as "poorly engineered"?
