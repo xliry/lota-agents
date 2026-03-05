@@ -62,6 +62,7 @@
 | S318 | @vu1n | --scan-after-import silently ignored in --import | VERIFIED | 4 | 5 | 1 | 3 | All 4 claims verified: flag parsed but never forwarded to do_import(); other import modes (batch, external-submit, import-run) correctly pass it; CLI UX bug, no scoring impact |
 | S319 | @vu1n | cargo check fmt:gnu misparses rustc diagnostics | VERIFIED | 4 | 5 | 2 | 4 | Confirmed: cargo check uses `fmt: gnu` but rustc outputs ` --> file:line:col` not `file:line:col: msg`; GNU regex matches zero lines; all cargo check issues silently lost; fix: switch to `--message-format=json` with `cargo` parser like clippy |
 | S320 | @vu1n | --runner CLI only accepts codex | PARTIALLY VERIFIED | 3 | 3 | 1 | 2 | All code refs accurate; --runner choices=["codex"] and validate_runner reject non-codex; but --dry-run + --import-run provides complete non-codex workaround; prepare.py documents multi-runner paths; intentional phased rollout, not a bug |
+| S321 | @jujujuda | Placeholder — no finding | INVALID | 0 | 0 | 0 | 0 | No technical content; just a boilerplate "Initial Assessment" promising future analysis that never came |
 
 ## Scoring Guide
 - **Sig** (1-10): Significance — how meaningful as "poorly engineered"?
