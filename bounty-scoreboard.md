@@ -67,6 +67,7 @@
 | S323 | @campersurfer | content_hash in issue IDs causes churn on re-import | VERIFIED | 5 | 5 | 3 | 4 | All 4 claims confirmed: sha256(summary)[:8] baked into IDs at per_file.py:113+121 and holistic_issue_flow.py:107+126; auto_resolve resolves by ID mismatch; no fuzzy dedup; batch_core _finding_identity_key deliberately omits content hash, confirming design inconsistency |
 | S324 | @SolariSystems | Dual-authority dimension weight dead fallback | PARTIALLY VERIFIED | 3 | 5 | 2 | 3 | Code flow accurate: _dimension_weight returns 1.0 on failure, written as configured_weight, bypasses SUBJECTIVE_DIMENSION_WEIGHTS; but metadata.py failure is near-impossible (deferred import resolves fine at runtime), SUBJECTIVE_DIMENSION_WEIGHTS serves stored-data fallback not metadata.py recovery, and metadata.py has own legacy fallbacks |
 | S325 | @gent33112-wq | Expression of interest (no submission) | INVALID | 0 | 0 | 0 | 0 | Not a submission — no technical claims, just interest in participating |
+| S326 | @kmccleary3301 | do_import_run() omits review_scope/reviewed_files/assessment_coverage | VERIFIED | 6 | 6 | 4 | 5 | All claims confirmed: do_import_run skips 3 metadata fields that _merge_and_write_results sets; missing full_sweep_included=None causes unscoped auto-resolution of ALL holistic issues on partial replay |
 
 ## Scoring Guide
 - **Sig** (1-10): Significance — how meaningful as "poorly engineered"?
