@@ -15,7 +15,7 @@
 | S05 | @agustif | Review packet schema drift | PARTIALLY VERIFIED | 6 | 4 | 3 | 4 | Real drift in external.py but fabricated file paths |
 | S06 | @renhe3983 | Fake language support | NOT VERIFIED | 2 | 2 | 1 | 2 | 22 generic languages use shared framework with real linters+AST; "completely fake" is a significant overstatement |
 | S07 | @renhe3983 | Monolithic files + thread safety | NOT VERIFIED | 2 | 2 | 1 | 2 | Fabricated line counts, wrong filenames; claims not verified against actual codebase |
-| S08 | @taco-devs | Issue.detail stringly-typed god field | PARTIALLY VERIFIED | 5 | 3 | 2 | 3 | Valid core observation; 2/3 code examples fabricated, metrics inflated 2x |
+| S08 | @taco-devs | Issue.detail stringly-typed god field | VERIFIED | 5 | 4 | 2 | 4 | Core claim confirmed: detail dict[str,Any] at schema.py:83, 14 shapes comment-only, 111 sites/34 files (submission 2x inflated); fix implemented PR#237 |
 | S09 | @renhe3983 | Issue.detail god field | DUPLICATE | 4 | 1 | 2 | 2 | Duplicate of S08 (posted 2 min later); all 3 code examples fabricated; wrong class name (Issue vs Finding) |
 | S10 | @dayi1000 | Frozen dataclass with mutable list | VERIFIED | 3 | 4 | 1 | 3 | Valid but inert: no code mutates the list; zero scoring impact |
 | S11 | @yuzebin | Engine->app layer violation | PARTIALLY VERIFIED | 6 | 5 | 3 | 5 | Real violation in since-removed file; inaccurate line numbers |
