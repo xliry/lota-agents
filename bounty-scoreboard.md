@@ -41,6 +41,7 @@
 | S31 | @xinlingfeiwu | Work queue uses lenient headroom | NOT VERIFIED | 2 | 2 | 1 | 2 | Central claim (enrich_with_impact, headroom prioritization) fabricated; ranking uses tier/confidence, not health breakdown |
 | S32 | @renhe3983 | Limited concurrency design | NOT VERIFIED | 2 | 2 | 1 | 2 | Wrong filename (runner_parallel.py doesn't exist); ThreadPoolExecutor usage is appropriate for I/O-bound CLI tool; no real deficiency |
 | S33 | @renhe3983 | No centralized config management | NOT VERIFIED | 2 | 1 | 1 | 1 | Claim factually wrong: core/config.py has schema-driven centralized config with validation; cited path base/config.py does not exist |
+| S34 | @renhe3983 | Inconsistent null handling | NOT VERIFIED | 2 | 1 | 1 | 1 | All file paths wrong (base/ vs core/); zero specific evidence; actual code shows consistent, properly-typed Optional returns |
 
 ## Scoring Guide
 - **Sig** (1-10): Significance — how meaningful as "poorly engineered"?
