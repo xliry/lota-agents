@@ -29,7 +29,7 @@
 | S19 | @TheSeanLavery | Performance improvements | - | - | - | - | - | |
 | S20 | @dayi1000 | Stale import binding JUDGMENT_DETECTORS | PARTIALLY VERIFIED | 5 | 4 | 3 | 4 | Real stale binding bug + valid god-function observation; every file path, line number, and supporting reference is wrong |
 | S21 | @xinlingfeiwu | compute_score_impact ignores weights | PARTIALLY VERIFIED | 5 | 5 | 2 | 4 | Real estimation bug but fabricated file paths and function names |
-| S22 | @samquill | do_run_batches 15 raw callbacks | - | - | - | - | - | |
+| S22 | @samquill | do_run_batches 15 raw callbacks | PARTIALLY VERIFIED | 4 | 3 | 1 | 3 | Real 15-callback observation; every file path, line number, parameter name, and types file wrong |
 | S23 | @xinlingfeiwu | Systematic over-injection anti-pattern | - | - | - | - | - | |
 | S24 | @Midwest-AI-Solutions | str.replace corrupts cluster meta | - | - | - | - | - | |
 | S25 | @xliry | false_positive scan-proof score inflation | - | - | - | - | - | OUR SUBMISSION |
