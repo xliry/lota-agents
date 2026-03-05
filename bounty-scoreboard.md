@@ -23,7 +23,7 @@
 | S13 | @renhe3983 | Test files larger than implementation | - | - | - | - | - | |
 | S14 | @renhe3983 | Debug print statements in production | - | - | - | - | - | |
 | S15 | @anthony-spruyt | Penalizes SOLID principles | - | - | - | - | - | Functional critique |
-| S16 | @opspawn | Scoring policy registry mutation | - | - | - | - | - | |
+| S16 | @opspawn | Scoring policy registry mutation | PARTIALLY VERIFIED | 3 | 3 | 2 | 3 | Standard Python plugin pattern; theoretical threading concern in CLI tool |
 | S17 | @jasonsutter87 | God-orchestrator do_run_batches | - | - | - | - | - | |
 | S18 | @jasonsutter87 | Selective lock discipline | - | - | - | - | - | |
 | S19 | @TheSeanLavery | Performance improvements | - | - | - | - | - | |
