@@ -76,6 +76,7 @@
 | S332 | @Tib-Gridello | Heterogeneous tuple sort keys in _natural_sort_key | VERIFIED | 7 | 8 | 6 | 7 | All 4 claims confirmed: subjective items return 4-element tuples, mechanical return 6-element at same _RANK_ISSUE tier; TypeError crash when impact ties and subjective_score matches CONFIDENCE_ORDER value; cross-compares score(0-100) vs confidence(0-9) causing wrong ordering; all file paths and line numbers exact |
 | S333 | @TSECP | Unsandboxed plugin auto-loading (dup) | DUPLICATE | 3 | 0 | 0 | 1 | Duplicate of S328 (@optimus-fulcria): same discovery.py:95-113 exec_module plugin loading; no new findings |
 | S334 | @xliry | false_positive scoring bypass (dup) | DUPLICATE | 5 | 0 | 4 | 2 | Duplicate of S25 by same author: same 3 claims (merge_findings:180 reopen guard, FAILURE_STATUSES_BY_MODE strict exclusion, verified_strict display-only); all verified but zero originality |
+| S335 | @opspawn | compute_score_impact ignores weights (dup) | DUPLICATE | 5 | 0 | 2 | 2 | Duplicate of S21 (@xinlingfeiwu): same compute_score_impact * 1.0 hardcoded weight finding at impact.py:41; technically correct but zero originality |
 
 ## Scoring Guide
 - **Sig** (1-10): Significance — how meaningful as "poorly engineered"?
