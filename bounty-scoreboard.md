@@ -55,6 +55,7 @@
 | S311 | @samquill | Duplicate diverged CONFIDENCE_WEIGHTS | PARTIALLY VERIFIED | 4 | 4 | 2 | 3 | Real: batch scoring defines _CONFIDENCE_WEIGHTS {high:1.2,med:1.0,low:0.75} vs canonical {1.0,0.7,0.3}; but they serve different scoring contexts (detection vs holistic dimension merge); divergence may be intentional |
 | S312 | @jujujuda | Silent fallback masks runtime failures | PARTIALLY VERIFIED | 3 | 2 | 1 | 2 | Config silent {} return is real but standard; load_state claim false (returns empty_state with logging, not None); weight fallback is documented cycle-break pattern |
 | S313 | @juzigu40-ui | S02 supplemental: scoring-policy impact | VERIFIED | 5 | 5 | 2 | 4 | Valid supplemental tracing non-transactional migration to target_strict_score drift; all code refs accurate; but failure scenario (OSError on config write after state strip) is too narrow for major impact |
+| S314 | @sungdark | Over-engineered architecture (3rd dup) | DUPLICATE | 2 | 0 | 1 | 1 | Third submission, same theme as S307/S308; file paths now accurate but observations remain generic "over-engineering" complaints with no scoring-engine insight |
 
 ## Scoring Guide
 - **Sig** (1-10): Significance — how meaningful as "poorly engineered"?
