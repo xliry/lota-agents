@@ -10,7 +10,7 @@
 |----|--------|-------|--------|-----|------|------|---------|-------|
 | S01 | @yuliuyi717-ux | State-model coupling | PARTIALLY VERIFIED | 4 | 3 | 3 | 3 | Accurate refs but shallow; scores recomputed deterministically |
 | S02 | @juzigu40-ui | Config bootstrap non-transactional | VERIFIED | 4 | 5 | 1 | 3 | Valid but inflated; low-risk migration path, no scoring impact |
-| S03 | @agustif | Subjective dimension circular pipeline | - | - | - | - | - | |
+| S03 | @agustif | Subjective dimension circular pipeline | PARTIALLY VERIFIED | 5 | 3 | 4 | 3 | Real circular dep but fabricated file paths; half evidence doesn't check out |
 | S04 | @agustif | Plan persistence destructive migration | - | - | - | - | - | |
 | S05 | @agustif | Review packet schema drift | - | - | - | - | - | |
 | S06 | @renhe3983 | Fake language support | - | - | - | - | - | Owner: intentional |
