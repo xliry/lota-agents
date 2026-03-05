@@ -56,6 +56,7 @@
 | S312 | @jujujuda | Silent fallback masks runtime failures | PARTIALLY VERIFIED | 3 | 2 | 1 | 2 | Config silent {} return is real but standard; load_state claim false (returns empty_state with logging, not None); weight fallback is documented cycle-break pattern |
 | S313 | @juzigu40-ui | S02 supplemental: scoring-policy impact | VERIFIED | 5 | 5 | 2 | 4 | Valid supplemental tracing non-transactional migration to target_strict_score drift; all code refs accurate; but failure scenario (OSError on config write after state strip) is too narrow for major impact |
 | S314 | @sungdark | Over-engineered architecture (3rd dup) | DUPLICATE | 2 | 0 | 1 | 1 | Third submission, same theme as S307/S308; file paths now accurate but observations remain generic "over-engineering" complaints with no scoring-engine insight |
+| S315 | @DavidBuchanan314 | Cross-file write consistency | PARTIALLY VERIFIED | 4 | 4 | 2 | 3 | Real gap: no multi-file transaction between state.json/plan.json writes; but each write is individually atomic (temp+rename), system self-heals via reconcile on next scan; "corruption" claim overstated — state stays correct, plan becomes stale |
 
 ## Scoring Guide
 - **Sig** (1-10): Significance — how meaningful as "poorly engineered"?
