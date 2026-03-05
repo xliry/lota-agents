@@ -11,10 +11,10 @@
 | S01 | @yuliuyi717-ux | State-model coupling | PARTIALLY VERIFIED | 4 | 3 | 3 | 3 | Accurate refs but shallow; scores recomputed deterministically |
 | S02 | @juzigu40-ui | Config bootstrap non-transactional | VERIFIED | 4 | 5 | 1 | 3 | Valid but inflated; low-risk migration path, no scoring impact |
 | S03 | @agustif | Subjective dimension circular pipeline | PARTIALLY VERIFIED | 5 | 3 | 4 | 3 | Real circular dep but fabricated file paths; half evidence doesn't check out |
-| S04 | @agustif | Plan persistence destructive migration | - | - | - | - | - | |
+| S04 | @agustif | Plan persistence destructive migration | PARTIALLY VERIFIED | 5 | 4 | 2 | 3 | Real coercion+reset pattern; 2/5 files fabricated, version "v7" is v2, all line numbers wrong |
 | S05 | @agustif | Review packet schema drift | PARTIALLY VERIFIED | 6 | 4 | 3 | 4 | Real drift in external.py but fabricated file paths |
-| S06 | @renhe3983 | Fake language support | - | - | - | - | - | Owner: intentional |
-| S07 | @renhe3983 | Follow-up observations | - | - | - | - | - | |
+| S06 | @renhe3983 | Fake language support | NOT VERIFIED | 2 | 2 | 1 | 2 | 22 generic languages use shared framework with real linters+AST; "completely fake" is a significant overstatement |
+| S07 | @renhe3983 | Monolithic files + thread safety | NOT VERIFIED | 2 | 2 | 1 | 2 | Fabricated line counts, wrong filenames; claims not verified against actual codebase |
 | S08 | @taco-devs | Issue.detail stringly-typed god field | PARTIALLY VERIFIED | 5 | 3 | 2 | 3 | Valid core observation; 2/3 code examples fabricated, metrics inflated 2x |
 | S09 | @renhe3983 | Issue.detail god field | - | - | - | - | - | Duplicate of S08 |
 | S10 | @dayi1000 | Frozen dataclass with mutable list | VERIFIED | 3 | 4 | 1 | 3 | Valid but inert: no code mutates the list; zero scoring impact |
@@ -26,14 +26,14 @@
 | S16 | @opspawn | Scoring policy registry mutation | PARTIALLY VERIFIED | 3 | 3 | 2 | 3 | Standard Python plugin pattern; theoretical threading concern in CLI tool |
 | S17 | @jasonsutter87 | God-orchestrator do_run_batches | PARTIALLY VERIFIED | 6 | 3 | 2 | 3 | Valid core observation; fabricated file paths (execution.py doesn't exist), invented function (prepare_holistic_review_payload), wrong numeric claims |
 | S18 | @jasonsutter87 | Selective lock discipline | PARTIALLY VERIFIED | 2 | 3 | 1 | 2 | Spots asymmetric locking but misdiagnoses it; failures is main-thread-only; fabricated contract_cache and non-existent file paths |
-| S19 | @TheSeanLavery | Performance improvements | - | - | - | - | - | |
+| S19 | @TheSeanLavery | Regex in loops + bypassed cache + redundant AST | VERIFIED | 5 | 5 | 3 | 5 | 3 claims: regex partially valid, bypassed file cache fully valid (14 sites), redundant AST parsing fully valid |
 | S20 | @dayi1000 | Stale import binding JUDGMENT_DETECTORS | PARTIALLY VERIFIED | 5 | 4 | 3 | 4 | Real stale binding bug + valid god-function observation; every file path, line number, and supporting reference is wrong |
 | S21 | @xinlingfeiwu | compute_score_impact ignores weights | PARTIALLY VERIFIED | 5 | 5 | 2 | 4 | Real estimation bug but fabricated file paths and function names |
 | S22 | @samquill | do_run_batches 15 raw callbacks | PARTIALLY VERIFIED | 4 | 3 | 1 | 3 | Real 15-callback observation; every file path, line number, parameter name, and types file wrong |
 | S23 | @xinlingfeiwu | Systematic over-injection anti-pattern | INVALID | 1 | 1 | 1 | 1 | All three claimed layers fabricated; no referenced files, functions, or signatures exist |
-| S24 | @Midwest-AI-Solutions | str.replace corrupts cluster meta | - | - | - | - | - | |
+| S24 | @Midwest-AI-Solutions | str.replace corrupts cluster meta | VERIFIED | 3 | 4 | 3 | 3 | Confirmed: naive str.replace corrupts unrelated numbers in cluster descriptions |
 | S25 | @xliry | false_positive scan-proof score inflation | VERIFIED | 8 | 8 | 9 | 8 | All 3 claims verified, all file refs accurate |
-| S26 | @xinlingfeiwu | app/ layer bypasses engine facades | - | - | - | - | - | |
+| S26 | @xinlingfeiwu | app/ layer bypasses engine facades | NOT VERIFIED | 3 | 2 | 1 | 2 | Actual: 5 imports not 57; fabricated file paths, inflated count 11x, claimed missing facades exist |
 | S27 | @renhe3983 | Inconsistent exception handling | - | - | - | - | - | |
 | S28 | @Midwest-AI-Solutions | dimension_coverage tautological metric | INVALID | 1 | 2 | 0 | 1 | Code misquoted: denominator is allowed_dims not assessments; metric works correctly |
 | S29 | @renhe3983 | Duplicate config validation patterns | - | - | - | - | - | |
