@@ -1,21 +1,22 @@
 # Desloppify Bounty Scoreboard
 
 **Source:** https://github.com/peteromallet/desloppify/issues/204
-**Last updated:** (agents will update this)
+**Deadline:** Friday, March 6, 2026 at 4:00 PM UTC
+**Last updated:** agents update this after each verification
 
 ## Submissions
 
-| # | Author | Title | Verified | Significance | Originality | Core Impact | Overall | Notes |
-|---|--------|-------|----------|-------------|-------------|------------|---------|-------|
+| ID | Author | Title | Status | Sig | Orig | Core | Overall | Notes |
+|----|--------|-------|--------|-----|------|------|---------|-------|
 | S01 | @yuliuyi717-ux | State-model coupling | - | - | - | - | - | |
 | S02 | @juzigu40-ui | Config bootstrap non-transactional | - | - | - | - | - | |
 | S03 | @agustif | Subjective dimension circular pipeline | - | - | - | - | - | |
 | S04 | @agustif | Plan persistence destructive migration | - | - | - | - | - | |
 | S05 | @agustif | Review packet schema drift | - | - | - | - | - | |
-| S06 | @renhe3983 | Fake language support | - | - | - | - | - | Owner said intentional |
+| S06 | @renhe3983 | Fake language support | - | - | - | - | - | Owner: intentional |
 | S07 | @renhe3983 | Follow-up observations | - | - | - | - | - | |
 | S08 | @taco-devs | Issue.detail stringly-typed god field | - | - | - | - | - | |
-| S09 | @renhe3983 | Issue.detail god field (duplicate of S08) | - | - | - | - | - | Duplicate |
+| S09 | @renhe3983 | Issue.detail god field | - | - | - | - | - | Duplicate of S08 |
 | S10 | @dayi1000 | Frozen dataclass with mutable list | - | - | - | - | - | |
 | S11 | @yuzebin | Engine->intelligence layer violation | - | - | - | - | - | |
 | S12 | @renhe3983 | Duplicated phase configuration | - | - | - | - | - | |
@@ -33,12 +34,13 @@
 | S24 | @Midwest-AI-Solutions | str.replace corrupts cluster meta | - | - | - | - | - | |
 | S25 | @xliry | false_positive scan-proof score inflation | - | - | - | - | - | OUR SUBMISSION |
 | S26 | @xinlingfeiwu | app/ layer bypasses engine facades | - | - | - | - | - | |
+| S27 | @renhe3983 | Inconsistent exception handling | - | - | - | - | - | |
+| S28 | @Midwest-AI-Solutions | dimension_coverage tautological metric | - | - | - | - | - | |
+| S29 | @renhe3983 | Duplicate config validation patterns | - | - | - | - | - | |
+| S30 | @renhe3983 | Flat directory structure 605 files | - | - | - | - | - | |
 
 ## Scoring Guide
-- **Significance** (1-10): How meaningful as a "poorly engineered" issue?
-- **Originality** (1-10): Deep insight or surface-level observation?
-- **Core Impact** (1-10): Does it affect gaming-resistant scoring (the tool's core purpose)?
+- **Sig** (1-10): Significance — how meaningful as "poorly engineered"?
+- **Orig** (1-10): Originality — deep insight or surface observation?
+- **Core** (1-10): Core Impact — affects gaming-resistant scoring?
 - **Overall** (1-10): Combined assessment
-
-## Top 5 (TBD)
-Agents will fill this in after verification.
