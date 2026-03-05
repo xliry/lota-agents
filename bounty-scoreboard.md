@@ -51,6 +51,7 @@
 | S307 | @sungdark | Over-engineered architecture + layering | NOT VERIFIED | 2 | 2 | 1 | 2 | Generic "over-engineering" complaints; fabricated code example (registry.py cross-layer import doesn't exist); base/detectors/ path fabricated; wrong counts (22 vs 28 langs, 240 vs 277 tests); pytest-in-prod claim false; no scoring-engine insight |
 | S308 | @sungdark | Over-engineered architecture (dup) | DUPLICATE | 2 | 0 | 1 | 1 | Exact duplicate of S307 by same author; no new information |
 | S309 | @lee101 | Fail-open persistence + dead BatchProgressTracker | PARTIALLY VERIFIED | 4 | 4 | 1 | 3 | Accurate file refs; fail-open real but overstated (backup recovery exists); BatchProgressTracker is dead code not active split-brain |
+| S310 | @doncarbon | Callback-parameter explosion pattern | PARTIALLY VERIFIED | 5 | 3 | 1 | 3 | Real systemic pattern (15 callbacks in do_run_batches, 539 _fn refs across 84 files); line numbers wrong (280 vs 391); param counts off by 1; overlaps S17+S22 |
 
 ## Scoring Guide
 - **Sig** (1-10): Significance — how meaningful as "poorly engineered"?
