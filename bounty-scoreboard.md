@@ -28,7 +28,7 @@
 | S18 | @jasonsutter87 | Selective lock discipline | PARTIALLY VERIFIED | 2 | 3 | 1 | 2 | Spots asymmetric locking but misdiagnoses it; failures is main-thread-only; fabricated contract_cache and non-existent file paths |
 | S19 | @TheSeanLavery | Performance improvements | - | - | - | - | - | |
 | S20 | @dayi1000 | Stale import binding JUDGMENT_DETECTORS | PARTIALLY VERIFIED | 5 | 4 | 3 | 4 | Real stale binding bug + valid god-function observation; every file path, line number, and supporting reference is wrong |
-| S21 | @xinlingfeiwu | compute_score_impact ignores weights | - | - | - | - | - | |
+| S21 | @xinlingfeiwu | compute_score_impact ignores weights | PARTIALLY VERIFIED | 5 | 5 | 2 | 4 | Real estimation bug but fabricated file paths and function names |
 | S22 | @samquill | do_run_batches 15 raw callbacks | - | - | - | - | - | |
 | S23 | @xinlingfeiwu | Systematic over-injection anti-pattern | - | - | - | - | - | |
 | S24 | @Midwest-AI-Solutions | str.replace corrupts cluster meta | - | - | - | - | - | |
