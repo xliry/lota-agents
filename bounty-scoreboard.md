@@ -15,7 +15,7 @@
 | S05 | @agustif | Review packet schema drift | PARTIALLY VERIFIED | 6 | 4 | 3 | 4 | Real drift in external.py but fabricated file paths |
 | S06 | @renhe3983 | Fake language support | - | - | - | - | - | Owner: intentional |
 | S07 | @renhe3983 | Follow-up observations | - | - | - | - | - | |
-| S08 | @taco-devs | Issue.detail stringly-typed god field | - | - | - | - | - | |
+| S08 | @taco-devs | Issue.detail stringly-typed god field | PARTIALLY VERIFIED | 5 | 3 | 2 | 3 | Valid core observation; 2/3 code examples fabricated, metrics inflated 2x |
 | S09 | @renhe3983 | Issue.detail god field | - | - | - | - | - | Duplicate of S08 |
 | S10 | @dayi1000 | Frozen dataclass with mutable list | - | - | - | - | - | |
 | S11 | @yuzebin | Engine->intelligence layer violation | - | - | - | - | - | |
