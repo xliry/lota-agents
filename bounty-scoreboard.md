@@ -50,6 +50,7 @@
 | S306 | @flowerjunjie | _specs.py monolithic/duplication/coupling | NOT VERIFIED | 2 | 2 | 0 | 2 | Declarative data file (801 lines, 28 specs with unique tree-sitter queries); "duplication" is just constructor calls with different params; import count wrong (21 not 25); splitting into 28 files adds no value for a pure-data module |
 | S307 | @sungdark | Over-engineered architecture + layering | NOT VERIFIED | 2 | 2 | 1 | 2 | Generic "over-engineering" complaints; fabricated code example (registry.py cross-layer import doesn't exist); base/detectors/ path fabricated; wrong counts (22 vs 28 langs, 240 vs 277 tests); pytest-in-prod claim false; no scoring-engine insight |
 | S308 | @sungdark | Over-engineered architecture (dup) | DUPLICATE | 2 | 0 | 1 | 1 | Exact duplicate of S307 by same author; no new information |
+| S309 | @lee101 | Fail-open persistence + dead BatchProgressTracker | PARTIALLY VERIFIED | 4 | 4 | 1 | 3 | Accurate file refs; fail-open real but overstated (backup recovery exists); BatchProgressTracker is dead code not active split-brain |
 
 ## Scoring Guide
 - **Sig** (1-10): Significance — how meaningful as "poorly engineered"?
