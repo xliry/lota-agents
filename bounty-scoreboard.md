@@ -16,7 +16,7 @@
 | S06 | @renhe3983 | Fake language support | NOT VERIFIED | 2 | 2 | 1 | 2 | 22 generic languages use shared framework with real linters+AST; "completely fake" is a significant overstatement |
 | S07 | @renhe3983 | Monolithic files + thread safety | NOT VERIFIED | 2 | 2 | 1 | 2 | Fabricated line counts, wrong filenames; claims not verified against actual codebase |
 | S08 | @taco-devs | Issue.detail stringly-typed god field | PARTIALLY VERIFIED | 5 | 3 | 2 | 3 | Valid core observation; 2/3 code examples fabricated, metrics inflated 2x |
-| S09 | @renhe3983 | Issue.detail god field | - | - | - | - | - | Duplicate of S08 |
+| S09 | @renhe3983 | Issue.detail god field | DUPLICATE | 4 | 1 | 2 | 2 | Duplicate of S08 (posted 2 min later); all 3 code examples fabricated; wrong class name (Issue vs Finding) |
 | S10 | @dayi1000 | Frozen dataclass with mutable list | VERIFIED | 3 | 4 | 1 | 3 | Valid but inert: no code mutates the list; zero scoring impact |
 | S11 | @yuzebin | Engine->app layer violation | PARTIALLY VERIFIED | 6 | 5 | 3 | 5 | Real violation in since-removed file; inaccurate line numbers |
 | S12 | @renhe3983 | Duplicated phase configuration | NOT VERIFIED | 1 | 1 | 1 | 1 | Fabricated: LanguagePhases class doesn't exist, line counts invented (4300 claimed vs 1479 actual), shared framework already exists |
