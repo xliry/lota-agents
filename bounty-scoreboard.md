@@ -11,7 +11,7 @@
 | S01 | @yuliuyi717-ux | State-model coupling | PARTIALLY VERIFIED | 4 | 3 | 3 | 3 | Accurate refs but shallow; scores recomputed deterministically |
 | S02 | @juzigu40-ui | Config bootstrap non-transactional | VERIFIED | 4 | 5 | 1 | 3 | Valid but inflated; low-risk migration path, no scoring impact |
 | S03 | @agustif | Subjective dimension circular pipeline | PARTIALLY VERIFIED | 5 | 3 | 4 | 3 | Real circular dep but fabricated file paths; half evidence doesn't check out |
-| S04 | @agustif | Plan persistence destructive migration | PARTIALLY VERIFIED+FIXED | 5 | 4 | 2 | 3 | Core confirmed: upgrade_plan_to_v7() forces version=7 unconditionally (schema_migrations.py:304-305), downgrading v8+ plans on save; user data preserved via setdefault; fix in PR#240 |
+| S04 | @agustif | Plan persistence destructive migration | PARTIALLY VERIFIED+FIXED | 5 | 4 | 2 | 3 | Core confirmed: upgrade_plan_to_v7() forces version=7 unconditionally (schema_migrations.py:304-305), downgrading v8+ plans on save; user data preserved via setdefault; fix in PR#240; schema fields (claim_restated, is_poor_engineering, is_significant, why_poor_engineering, why_missed) added in PR#252 |
 | S05 | @agustif | Review packet schema drift | PARTIALLY VERIFIED | 6 | 4 | 3 | 4 | Real drift in external.py but fabricated file paths |
 | S06 | @renhe3983 | Fake language support | NOT VERIFIED | 2 | 2 | 1 | 2 | 22 generic languages use shared framework with real linters+AST; "completely fake" is a significant overstatement |
 | S07 | @renhe3983 | Monolithic files + thread safety | NOT VERIFIED | 2 | 2 | 1 | 2 | Fabricated line counts, wrong filenames; claims not verified against actual codebase |
