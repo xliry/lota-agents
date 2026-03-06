@@ -78,6 +78,7 @@
 | S334 | @xliry | false_positive scoring bypass (dup) | DUPLICATE | 5 | 0 | 4 | 2 | Duplicate of S25 by same author: same 3 claims (merge_findings:180 reopen guard, FAILURE_STATUSES_BY_MODE strict exclusion, verified_strict display-only); all verified but zero originality |
 | S335 | @opspawn | compute_score_impact ignores weights (dup) | DUPLICATE | 5 | 0 | 2 | 2 | Duplicate of S21 (@xinlingfeiwu): same compute_score_impact * 1.0 hardcoded weight finding at impact.py:41; technically correct but zero originality |
 | S336 | @yv-was-taken | display-name keying in dimension_scores | VERIFIED | 6 | 7 | 3 | 5 | All 7 file paths and line numbers accurate; real keying inconsistency creating reverse-mapping complexity (aliases, fuzzy matching); divergent _normalize_dimension_name implementations confirmed; low practical impact — scoring works correctly, language-override orphaning is theoretical |
+| S337 | @yv-was-taken | _mark_auto_resolved() clears suppression for suppressed issues | PARTIALLY VERIFIED+FIXED | 5 | 5 | 1 | 3 | Core confirmed: auto_resolve_disappeared() has no guard to skip suppressed issues before _mark_auto_resolved() (merge_issues.py:51-55) clears suppressed/suppressed_at/suppression_pattern; fix: add suppression guard in PR#241; "permanent" claim overstated — suppression recovered on next in-scope scan |
 
 ## Scoring Guide
 - **Sig** (1-10): Significance — how meaningful as "poorly engineered"?
