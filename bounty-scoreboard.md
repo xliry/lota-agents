@@ -12,3 +12,4 @@
 | S002 | @yuliuyi717-ux | State-model coupling | YES_WITH_CAVEATS | 4 | 3 | 3 | 3 | Valid observation, overstated significance. [PR#255](https://github.com/peteromallet/desloppify/pull/255) |
 | S003 | @juzigu40-ui | Config bootstrap non-transactional | NO | 0 | 0 | 0 | 0 | Duplicate of S313 from same author. [PR#256](https://github.com/peteromallet/desloppify/pull/256) |
 | S005 | @agustif | Subjective-dimension circular dependency chain | YES_WITH_CAVEATS | 4 | 3 | 2 | 3 | Accurate but partially covered by S307/S312. [PR#36](https://github.com/xliry/desloppify/pull/36) |
+| S006 | @agustif | Destructive read-path plan migration | YES_WITH_CAVEATS | 5 | 4 | 1 | 4 | Version downgrade & container coercion original; fail-open overlaps S309. [PR#257](https://github.com/peteromallet/desloppify/pull/257) |
