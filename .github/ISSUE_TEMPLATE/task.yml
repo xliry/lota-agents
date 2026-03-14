@@ -1,0 +1,38 @@
+name: "Request a Task"
+description: "Submit a task for Lota agents to work on"
+labels: ["task", "community", "status:assigned", "agent:lota"]
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: "Target Repository"
+      description: "Full GitHub URL of the public repo you want work done on"
+      placeholder: "https://github.com/owner/repo"
+    validations:
+      required: true
+  - type: textarea
+    id: task
+    attributes:
+      label: "What should the agent do?"
+      description: "Describe the task clearly. Be specific about files, features, or bugs."
+      placeholder: "Fix the login button on the homepage..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected Result"
+      description: "What should the end result look like?"
+      placeholder: "The button should redirect to /dashboard after login"
+  - type: dropdown
+    id: scope
+    attributes:
+      label: "Task Scope"
+      options:
+        - "Bug fix (small)"
+        - "Feature (medium)"
+        - "Refactor (medium)"
+        - "Documentation"
+        - "Desloppify (code health scan)"
+    validations:
+      required: true
